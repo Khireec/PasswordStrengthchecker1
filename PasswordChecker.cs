@@ -4,8 +4,14 @@ namespace PasswordStrength
     {
         public static string CheckStrength(string password)
         {
+            if (password.Length >=1 && password.Length <8)
+            {
+                return "Insufficient Password Length. Must Have 8 Character";
+            }
+
+
             if (password == null || password == ""){
-                return "Ineligable";
+                return "Ineligible";
             }
             bool isUpperCase = false;
             bool isLowerCase = false;
