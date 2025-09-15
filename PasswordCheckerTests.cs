@@ -51,7 +51,7 @@ namespace PasswordStrngthTest
             Assert.Equal("Insufficient Password Length. Must Have 8 Character", PasswordChecker.CheckStrength("P10TEN"));
             Assert.Equal("Insufficient Password Length. Must Have 8 Character", PasswordChecker.CheckStrength("PWORD89"));
         }
-        
-        
+
+
     }
 }
