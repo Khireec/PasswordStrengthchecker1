@@ -1,3 +1,22 @@
+/// <summary>
+/// Checks the strength of a password using several criteria:
+/// - Minimum length of 8 characters (if shorter, returns "INELIGIBLE").
+/// - At least one uppercase letter.
+/// - At least one lowercase letter.
+/// - At least one digit.
+/// - At least one symbol.
+///
+/// The method reads the password character-by-character, increases count in increments of 1 for each
+/// criteria met, counts how many criteria are met, and returns the following depending
+/// on how many in:
+/// - 0 criteria met = "INELIGIBLE"
+/// - 1 criteria met = "WEAK"
+/// - 2 or 3 criteria met = "MEDIUM"
+/// - 4 criteria met = "STRONG"
+/// - If password is empty or has less than 8, returns:
+///   - "Insufficient Password Length. Must Have 8 Character"
+/// </summary>
+
 namespace PasswordStrength
 {
     public class PasswordChecker
