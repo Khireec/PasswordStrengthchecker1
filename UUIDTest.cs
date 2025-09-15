@@ -1,4 +1,13 @@
-﻿using Xunit;
+﻿/// <summary>
+/// Generates a version 4 UUID (randomly generated).
+/// </summary>
+/// <returns>
+/// A string representing a valid version 4 UUID in standard format,
+/// for example: "f47ac10b-58cc-4372-a567-0e02b2c3d479".
+/// </returns>
+
+
+using Xunit;
 using PasswordStrength;
 
 namespace UUIDtest;
